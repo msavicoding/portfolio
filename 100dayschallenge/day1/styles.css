@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+  .center {
+    position: absolute;
+    top: 50.8%;
+    left: 50.2%;
+    transform: translate(-50%,-50%);
+  }
+
+  .teste {
+    height: 400px;
+    background-image: linear-gradient(to right, #433fa1, #3b4da8, #355aad, #3566b0, #3a71b2, #367cb7, #3686bb, #3b90be, #349dc3, #35a9c7, #3eb5c8, #4ec1c8);
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.238);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    line-height: 0;
+  }
+
+  .number {
+    font-size: 120px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 0.1px;
+    text-shadow: 0 02px black;;
+
+  }
+
+  .days {
+    font-size: 80px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 0 2px black;;
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Courier', arial;
+    letter-spacing: 5px;
+  }
+
+  .challange {
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0 0 2cap black;;
+  }
