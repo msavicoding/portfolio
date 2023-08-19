@@ -1,0 +1,575 @@
+JavaScript 
+
+--> Concatened = console.log('Hello,' + ' ' + 'World"!);
+--> Properties = console.log('Hello'.length);
+--> Method = Property + Argument --> console.log('Marco'.toUpperCase())
+--> console = It is an object
+--> Methods for Objects = console.log(Math.random()) and console.log(Number.isInteger())
+--> 7 fundamental data types: strings, numbers, booleans, null, undefined, symbol, and object.
+--> let myVariable = 10; --> This let can be changed, example: myVariable = 20;
+--> console.log(`Hello, ${dear}`);
+
+-------------------------------------------------------
+
+Conditionals
+
+--> if and else
+--> if (condition to happen) {what will happen}
+--> if..else statement
+--> else runs when if is false
+--> Comparison Operators >, <, === (Is equal to), !== (Is not equal to)
+--> 'apples' === 'oranges' // false --> As apples are not equal to oranges, this will return false
+--> Conditionals are basically booleans values
+
+
+
+let hungerLevel = 7;
+
+if (hungerLevel === 9) {
+  console.log('Time to eat!');
+} else {
+  console.log('We can eat later!');
+}
+
+
+
+Logical operators + conditionals
+1st -->  the and operator (&&)
+2nd --> the or operator (||)
+3rd --> the not operator(!)
+
+
+
+&& both must evaluate to true for the entire condition to execute.
+the ! operator will either take a true value and pass back false, or it will take a false value and pass back true.
+
+
+
+if (stopLight === 'green' && pedestrians === 0) {
+  console.log('Go!');
+} else {
+  console.log('Stop');
+}
+
+
+
+let mood = 'happy';
+let tirednessLevel = 1;
+
+if (mood === 'sleepy' || tirednessLevel > 8) {
+  console.log('time to sleep') } else {
+    console.log('not bed time yet')
+  }
+
+
+
+Truthy and Falsy
+
+--> The list of falsy values includes:
+	0
+	Empty strings like "" or ''
+	null which represent when there is no value at all
+	undefined which represent when a declared variable lacks a value
+	NaN, or Not a Number
+
+
+
+
+let numberOfApples = 0;
+ 
+if (numberOfApples){
+   console.log('Let us eat apples!');
+} else {
+   console.log('No apples left!');
+}
+ 
+// Prints 'No apples left!'
+
+
+
+
+
+--> Truthy and Falsy Assignment
+
+let tool = 'marker';
+let writingUtensil = tool || 'pen';
+
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+
+
+
+Ternary Operator
+
+--> Spend less time writing if...else statements
+
+
+
+Instead of 
+
+
+
+let isNightTime = true;
+ 
+if (isNightTime) {
+  console.log('Turn on the lights!');
+} else {
+  console.log('Turn off the lights!');
+}
+
+
+
+
+
+
+
+You can use
+
+
+isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+
+
+
+
+let isLocked = false;
+
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+let isCorrect = true;
+
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+
+let favoritePhrase = 'Love That!';
+
+favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+
+
+
+
+
+
+
+
+Else if Statements
+--> 'else if' statement
+--> The else if statement always comes after the if statement and before the else statement. 
+
+let stopLight = 'yellow';
+ 
+if (stopLight === 'red') {
+  console.log('Stop!');
+} else if (stopLight === 'yellow') {
+  console.log('Slow down.');
+} else if (stopLight === 'green') {
+  console.log('Go!');
+} else {
+  console.log('Caution, unknown!');
+}
+
+
+
+
+
+
+The switch keyword
+--> It is an alternative to else if;
+--> switch
+
+
+
+
+
+
+
+
+let groceryItem = 'papaya';
+ 
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
+
+
+
+
+
+
+let athleteFinalPosition = 'first place';
+
+switch (athleteFinalPosition) {
+  case 'first place':
+  console.log('You get the gold medal!');
+  break
+  case 'second place':
+  console.log('You get the silver medal!')
+  break
+  case 'third place':
+  console.log('You get the bronze medal!')
+  break
+  default:
+  console.log('No medal awarded.')
+  break
+} 
+
+
+-------------------------------------------------------
+
+Challange 
+
+
+let userName = "Marco";
+
+userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
+
+let userQuestion = 'Will I become a software engineer?'
+
+console.log(`${userName} asked: ${userQuestion}`);
+
+let randomNumber = Math.floor(Math.random() * 8);
+
+console.log(randomNumber);
+
+let eightBall = '';
+
+switch(randomNumber) {
+    case 0:
+  eightBall = 'It is decidedly so';
+  break
+    case 1:
+  eightBall = 'Reply hazy try again';
+  break
+    case 2:
+  eightBall = 'Reply hazy try again';
+  break
+    case 3:
+  eightBall = 'Cannot predict now';
+  break
+    case 4:
+  eightBall = 'Do not count on it';
+  break
+    case 5:
+  eightBall = 'My sources say no';
+  break
+    case 6:
+  eightBall = 'Outlook not so good';
+  break
+    case 7:
+  eightBall = 'Signs point to yes';
+  break
+}
+
+console.log(`The random 8 ball says: ${eightBall}.`)
+
+
+........................................................................
+
+
+
+
+let raceNumber = Math.floor(Math.random() * 1000);
+let runnerEarly = true;
+let runnerAge = 18;
+
+if (runnerAge > 17 && runnerEarly === true) {
+  raceNumber = raceNumber + 1000;
+} else {
+  raceNumber = raceNumber;
+} 
+
+if (runnerAge > 17 && runnerEarly === true) {
+  console.log(`${raceNumber}, you will race at 9:30am`)
+} else if(runnerAge > 17 && runnerEarly === false) {
+  console.log(`${raceNumber}, you will race at 11:00am`)
+} else if (runnerAge < 18) {T
+  console.log(`${raceNumber}, you will run at 12:30pm`)
+} else {
+  console.log('Late adults run at 11:00am')
+}
+
+
+
+
+---------------------------------------------------------
+=========================================================
+---------------------------------------------------------
+---------------------------------------------------------
+=========================================================
+---------------------------------------------------------
+---------------------------------------------------------
+=========================================================
+---------------------------------------------------------
+---------------------------------------------------------
+=========================================================
+---------------------------------------------------------
+
+
+
+Functions 
+
+--> Function declarations
+
+Hoisting --> allows access to function declarations before they’re defined.
+
+--> Calling a function
+
+You do not need to say 2x the word function hello () {}
+     --> you can just say hello ();
+
+
+
+
+
+
+
+function sayThanks() {
+  console.log('Thank you for your purchase! We appreciate your business.');
+}
+
+sayThanks();
+sayThanks();
+sayThanks();
+
+
+
+
+
+----> Parameters and Arguments
+
+
+=======> Parameters 
+
+function calculateArea(width, height) {
+  console.log(width*height);
+}
+
+----> In this case, parameters are (width, height)
+	----> Parameters are used as variables
+
+
+Parameters ====> Arguments ----> Values or Variables
+
+
+
+
+
+function sayThanks(name) {
+  console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
+}
+
+sayThanks('Cole');
+
+
+
+
+
+=========> Default parameters
+
+
+function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+ 
+greeting('Nick') // Output: Hello, Nick!
+greeting() // Output: Hello, stranger!
+ 
+
+------------------------------------
+------------------------------------
+
+
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
+makeShoppingList ('rice', 'beans', 'milk')
+
+
+----------------------------------------------------
+
+
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs') {
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`)
+}
+
+makeShoppingList ();
+
+
+
+
+===============================> Return
+
+
+
+
+function monitorCount (rows, columns) {
+  const numOfMonitors = rows * columns;
+  return numOfMonitors;
+}
+
+const numOfMonitors = monitorCount(5, 4);
+
+console.log(numOfMonitors);
+
+
+
+-----------------------------------------------------
+
+
+======================> Helper Functions
+
+--> return value of a function, in another function
+
+
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors (rows, columns) {
+  return monitorCount(rows, columns) * 200;
+}
+
+const totalCost = costOfMonitors(5, 4);
+
+console.log(totalCost);
+
+
+
+-----------------------------------------------------------
+
+Function Expressions
+
+--> Anonymous function ---> Do not have a name
+
+
+
+const plantNeedsWater = function(day) {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+plantNeedsWater('Tuesday');
+console.log(plantNeedsWater('Tuesday'));
+
+
+
+
+-------------------------------------------------------------
+
+
+Arrow functin
+
+function name() {}
+() => {}
+
+
+----------------------------------------------------------
+
+Concise Body Arrow Functions
+
+
+
+//Zero Parameters
+const functionName = paramOne => {};
+
+//One Parameter
+const functionName = paramOne => {};
+
+//Two or more parameters
+const functionName = (paramOne, paramTwo) => {};
+
+
+
+
+const squareNum = (num) => {
+  return num * num;
+};
+
+
+to 
+
+
+const squareNum = num => num * num;
+
+
+
+
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+
+--------------------------------------------------
+-------------------------------------------------
+
+
+Review
+
+
+---> Parameters 
+
+function calculateArea(width, height) {
+  console.log(width * height);
+}
+
+//Parameters are treated like variables within a function
+ 
+
+======> Call a fucntion in your code:
+calculateArea(5, 10);
+
+
+To return a value from a function, we use a return statement.
+
+
+
+
+====================================================================
+====================================================================
+====================================================================
+
+From the Book --- JAVASCRIPT for Webdevelopment
+
+---> document.getELementById('demo').innerHTML = 'Hello, world';
+     document.querySelector('#demo').innerHTML = 'Hello, world';
+
+==============================================================================
+
+July 14th, 2023
+
+----->  Process of CALLING FUNCTIONS
+
+// Defining the function
+function sum(num1, num2) {
+  return num1 + num2;
+}
+ 
+// Calling the function
+sum(2, 4); // 6
+
+
+
+------------------------------------------------------------------------->>
+
+Challange
+
+--> Create a function that has one parameter
+
+const nameFunction = parameterName ==> {}
+
+

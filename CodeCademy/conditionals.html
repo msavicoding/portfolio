@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Challange</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                let myname = 'Marco';
+                let myquestion = 'Will I become a Software engineer?';
+                let randomNumber = Math.floor(Math.random() * 8);
+                let eightballanswer = '';
+
+                document.querySelector('#myname').innerHTML = myname;
+                document.querySelector('#myquestion').innerHTML = `${myname} asked: ${myquestion}`;
+                document.querySelector('#randomNumber').innerHTML = randomNumber;
+                 
+                    if (randomNumber >= 4) {
+                        eightballanswer = 'Yes, you will';
+                    } else if (randomNumber <= 4) {
+                        eightballanswer =  'No, you wont';
+                    } else {
+                        eightballanswer = 'I do not know';
+                    }
+
+                    document.querySelector('#randomballanswer').innerHTML = eightballanswer;
+
+                }
+
+                
+            );
+        </script>
+    </head>
+    <body>
+        <h1 id="myname">...</h1>
+        <h2 id="myquestion">...</h2>
+        <h3 id="randomballanswer">...</h3>
+        <h4 id="randomNumber"></h4>
+    </body>
+</html>
