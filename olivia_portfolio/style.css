@@ -1,0 +1,34 @@
+.header {
+    background-color: CornflowerBlue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .about-me {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.8;
+    color: Azure;
+  }
+  
+  .title {
+    font-weight: bold; 
+  }
+  
+  h1 {
+    color: Azure;
+  }
+  
+  .personal-img {
+    border-radius: 5px;
+  }
+  
+  body {
+    font-family: arial;
+    background-image: url(https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png);
+  }
+  
+  li {
+    margin: 10px 0;
+  }
